@@ -1,0 +1,22 @@
+# phptravels demo. Get demo credentials from https://phptravels.com/demo, then run e.g.:
+#   python -m nltest -f examples/phptravels.txt --var CUSTOMER_EMAIL=... --var CUSTOMER_PASSWORD=... \
+#                    --var ADMIN_EMAIL=... --var ADMIN_PASSWORD=...
+# Test cases are separated by blank lines. An optional first line "url:" sets the start page.
+
+url: https://phptravels.net
+Log in as a customer and verify the dashboard is shown
+
+url: https://phptravels.net
+Log in as a customer, then log out and verify the login page is shown again
+
+url: https://phptravels.net/login
+Log in with the email nobody@example.com and password wrongpassword and verify an error message about invalid credentials is shown
+
+url: https://phptravels.net
+Search for hotels in Dubai and verify that a list of hotel results is displayed
+
+url: https://phptravels.net/admin
+Log in as an administrator and verify the admin dashboard is shown
+
+url: https://phptravels.com/demo
+Verify the demo page offers a form to request demo access with a work email field

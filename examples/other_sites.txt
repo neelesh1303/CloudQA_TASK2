@@ -1,0 +1,15 @@
+# Different websites, to show nothing is site-specific.
+url: https://www.saucedemo.com
+Log in as the standard user, add the "Sauce Labs Backpack" to the cart, open the cart and verify the backpack is in it with a price of $29.99
+
+url: https://www.saucedemo.com
+Log in as the locked out user and verify an error says the user has been locked out
+
+url: https://the-internet.herokuapp.com
+Open the Dropdown page, choose Option 2 and verify Option 2 is selected
+
+url: https://the-internet.herokuapp.com
+Open Form Authentication, log in with the credentials shown on that page, and verify the secure area message is displayed
+
+url: https://todomvc.com/examples/react/dist/
+Add todos "buy milk" and "walk dog", mark "buy milk" as completed, and verify that 1 item is left
